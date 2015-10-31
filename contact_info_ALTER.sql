@@ -25,7 +25,8 @@ CREATE TABLE contact_info (
 	zip_postcode VARCHAR(10),
 	country_region VARCHAR(15),
 	company_url VARCHAR(40),
-	company_phone VARCHAR(12));
+	company_phone VARCHAR(12)
+);
 
 INSERT INTO contact_info (firstname, middleinital, lastname, suffix_description, title_description, jobtitle, department, email, url, IMaddress, phone_number, phonetype_description, birthday, notes, companyname, street1, city, state_province, zip_postcode, country_region, company_url, company_phone) VALUES ('Jacob', 'P', 'Jacoby', 'Jr.', 'Mr.', 'Director', 'Finance', 'jjacoby@concor.com', 'www.concor.com/~jacoby', 'jpjacoby', '323-546-3322 ext. 29', 'work', '1969-07-15', 'All meetings must be sheduled through his assistant.', 'Concor International, Inc.', '143 North Main Street', 'Beverly Hills', 'CA', '90210-3712', 'USA', 'www.concor.com', '323-546-5000'); 
 
@@ -37,41 +38,53 @@ INSERT INTO contact_info (firstname, middleinital, lastname, suffix_description,
 
 INSERT INTO contact_info (firstname, lastname, title_description, email, IMaddress, phone_number, phonetype_description, birthday, notes) VALUES ('Rachel', 'Raye', 'Miss.', 'goof@go.com', 'goofy14', '585-532-4332', 'cell', '1985-05-06', 'Favourite colour is orange.');
 
-INSERT INTO contact_info (firstname, middleinital, lastname, title_description, jobtitle, department, email, birthday, companyname, city, state_province, country_region) VALUES ('Georgia', 'G H', 'Burnett', 'Ms.', 'Ph.D. Candidate', 'Ancient History', 'georgia@fedarch.org', '1991-10-03', 'Macquarie University', 'Sydney', 'NSW', 'Australia');
+INSERT INTO contact_info (firstname, middleinital, lastname, title_description, jobtitle, department, email, birthday, companyname, city, state_province, country_region) 
+                  VALUES ('Georgia', 'G H', 	   'Burnett', 'Ms.', 			'Ph.D. Candidate', 'Ancient History', 'georgia@fedarch.org', '1991-10-03', 'Macquarie University', 'Sydney', 'NSW', 'Australia');
 
 SELECT *
-FROM contact_info;
+  FROM contact_info;
 
 SELECT firstname, lastname
-FROM contact_info
-WHERE lastname = 'Smith';
+  FROM contact_info
+ WHERE lastname = 'Smith';
 
 SELECT firstname, lastname, jobtitle, department
-FROM contact_info
-WHERE companyname = 'Concor International, Inc.';
+  FROM contact_info
+ WHERE companyname = 'Concor International, Inc.';
 
 SELECT firstname, lastname
-FROM contact_info
-WHERE state_province = 'CA';
+  FROM contact_info
+ WHERE state_province = 'CA';
 
 SELECT firstname, lastname, phone_number
-FROM contact_info
-WHERE phonetype_description = 'work' OR phonetype_description = 'cell';
+  FROM contact_info
+ WHERE phonetype_description = 'work' OR phonetype_description = 'cell';
 
 ALTER TABLE contact_info 
-	ADD contactID varchar(9),
-	ADD	suffixID varchar(10),
-	ADD	titleID varchar(11),
-	ADD	companyID varchar(12),
-	ADD	phonetypeID varchar(13);
+  ADD contactID varchar(9),
+  ADD suffixID varchar(10),
+  ADD titleID varchar(11),
+  ADD companyID varchar(12),
+  ADD phonetypeID varchar(13);
 
-UPDATE contact_info
-	SET contactID = ('123456789', '987654321', '121212121', '33333', '556')
-	WHERE firstname = ('Jacob', 'Charlene', 'Carson', 'Les', 'Rachel');
+
+update contact_info set contactid = '123456789' where firstname = 'Jacob';
+ update contact_info set contactid = '987654321' where firstname =  'Charlene';
+ update contact_info set contactid = '121212121' where firstname =  'Carson';
+ update contact_info set contactid = '33333' where firstname =  'Les';
+ update contact_info set contactid = '556' where firstname =  'Rachel';
+
+
+
+
+
+
+
+
 
 DELETE FROM contact_info
-	WHERE firstname = 'Georgia',
-		  lastname = 'Burnett';
+ WHERE firstname = 'Georgia'
+   AND lastname = 'Burnett';
 
 ALTER TABLE contact_info 
 	ADD CONSTRAINT contact_info_pk PRIMARY KEY (phone_number, contactID)
