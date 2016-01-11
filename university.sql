@@ -39,7 +39,7 @@ CREATE TABLE professor (
 CREATE TABLE grad_students (
 	studentID NUMERIC(10) REFERENCES student,
 	professorID NUMERIC(10) REFERENCES professor,
-	departmentID VARCHAR(6) REFERENCES department
+	PRIMARY KEY (studentID, professorID)
 );
 
 CREATE TABLE course (
@@ -53,14 +53,16 @@ CREATE TABLE enrolled (
 	studentID NUMERIC(10) REFERENCES student,
 	courseID VARCHAR(6) REFERENCES course,
 	semester NUMERIC(1),
-	grade NUMERIC(3)
+	grade NUMERIC(3),
+	PRIMARY KEY (studentID, courseID)
 );
 
 CREATE TABLE planned (
 	studentID NUMERIC(10) REFERENCES student,
 	courseID VARCHAR(6) REFERENCES course,
 	semester NUMERIC(1),
-	year NUMERIC(4)
+	year NUMERIC(4),
+	PRIMARY KEY (studentID, courseID)
 );
 
 CREATE TABLE time (
@@ -77,8 +79,10 @@ CREATE TABLE place (
 
 CREATE TABLE course_location (
 	courseID VARCHAR(6) REFERENCES course,
-	day VARCHAR(20) REFERENCES time, 
-	hour NUMERIC(4) REFERENCES time,
-	room NUMERIC(2) REFERENCES place,
-	building VARCHAR(20) REFERENCES place
+	day VARCHAR(20), 
+	hour NUMERIC(4),
+	room NUMERIC(2),
+	building VARCHAR(20),
+	    FOREIGN KEY (day, hour) REFERENCES time(day,hour),
+	    FOREIGN KEY (room, building) REFERENCES place(room,building)
 );
