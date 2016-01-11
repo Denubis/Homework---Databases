@@ -6,7 +6,7 @@ CREATE TABLE department (
 	name VARCHAR(20),
 	telephone NUMERIC(10),
 	departmentID VARCHAR(6),
-	PRIMARY KEY (departmentID)
+	CONSTRAINT departmentPrimarykey PRIMARY KEY (departmentID)
 );
 
 CREATE TABLE postcode (
