@@ -1,0 +1,74 @@
+DROP DATABASE
+CREATE DATABASE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+INSERT 0 4
+INSERT 0 3
+INSERT 0 7
+INSERT 0 5
+INSERT 0 7
+            papertitle            | firstname |    lastname     
+----------------------------------+-----------+-----------------
+ This is a good paper             | Brian     | Ballsun-Stanton
+ This is a good paper             | Georgia   | Burnett
+ This is a best paper             | Shawn     | Ross
+ This is a best paper             | Georgia   | Burnett
+ This is a plagarised paper       | Bad       | Author
+ This is a badly plagarised paper | Bad       | Author
+ This is a badly written paper    | Georgia   | Burnett
+(7 rows)
+
+ paperid | authorid 
+---------+----------
+       1 |        2
+       1 |        1
+       2 |        3
+       2 |        1
+       3 |        4
+       4 |        4
+       5 |        1
+(7 rows)
+
+INSERT 0 4
+INSERT 0 9
+INSERT 0 4
+            The Paper             |      Referenced Paper      
+----------------------------------+----------------------------
+ This is a best paper             | This is a good paper
+ This is a badly plagarised paper | This is a plagarised paper
+ This is a badly written paper    | This is a good paper
+ This is a badly written paper    | This is a best paper
+(4 rows)
+
+ firstname |    lastname     
+-----------+-----------------
+ Georgia   | Burnett
+ Brian     | Ballsun-Stanton
+(2 rows)
+
+ firstname |    lastname     
+-----------+-----------------
+ Georgia   | Burnett
+ Brian     | Ballsun-Stanton
+(2 rows)
+
+ authorid 
+----------
+        1
+        2
+        1
+(3 rows)
+
+          papertitle           
+-------------------------------
+ This is a good paper
+ This is a best paper
+ This is a badly written paper
+(3 rows)
+
