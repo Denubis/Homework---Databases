@@ -1,0 +1,37 @@
+DROP VIEW
+DROP TABLE
+DROP TABLE
+CREATE TABLE
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+ personid | firstname |    lastname     
+----------+-----------+-----------------
+        1 | Brian     | Ballsun-Stanton
+        2 | Georgia   | Burnett
+        3 | Shawn     | Ross
+(3 rows)
+
+ personid | firstname |    lastname     | employeeid | supervisorid 
+----------+-----------+-----------------+------------+--------------
+        2 | Georgia   | Burnett         |          2 |             
+        1 | Brian     | Ballsun-Stanton |          1 |            2
+(2 rows)
+
+CREATE VIEW
+ personid |         name          
+----------+-----------------------
+        1 | Brian Ballsun-Stanton
+        2 | Georgia Burnett
+        3 | Shawn Ross
+(3 rows)
+
+       employee        |   supervisor    
+-----------------------+-----------------
+ Georgia Burnett       | 
+ Brian Ballsun-Stanton | Georgia Burnett
+(2 rows)
+

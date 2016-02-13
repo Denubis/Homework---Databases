@@ -1,0 +1,98 @@
+DROP DATABASE
+CREATE DATABASE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+ALTER TABLE
+CREATE TABLE
+CREATE TABLE
+INSERT 0 2
+INSERT 0 2
+INSERT 0 3
+ ?column? 
+----------
+ 1
+ a
+(2 rows)
+
+ ?column? 
+----------
+(0 rows)
+
+ ?column? 
+----------
+ a
+(1 row)
+
+       ownername       | address  
+-----------------------+----------
+ Brian Ballsun-Stanton | MQ
+ Brian Ballsun-Stanton | MQ
+ Brian Ballsun-Stanton | MQ
+ Brian Ballsun-Stanton | Eastwood
+ Brian Ballsun-Stanton | Eastwood
+ Brian Ballsun-Stanton | Eastwood
+ Georgia Burnett       | MQ
+ Georgia Burnett       | MQ
+ Georgia Burnett       | MQ
+ Georgia Burnett       | Eastwood
+ Georgia Burnett       | Eastwood
+ Georgia Burnett       | Eastwood
+(12 rows)
+
+    ownername    | address  |           foo            
+-----------------+----------+--------------------------
+ Georgia Burnett | MQ       | Georgia Burnett MQ
+ Georgia Burnett | Eastwood | Georgia Burnett Eastwood
+(2 rows)
+
+       ownername       
+-----------------------
+ Brian Ballsun-Stanton
+ Georgia Burnett
+(2 rows)
+
+       ownername       
+-----------------------
+ Brian Ballsun-Stanton
+(1 row)
+
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+ foo | bar 
+-----+-----
+ a   | 
+ b   | 
+(2 rows)
+
+ foo | bar 
+-----+-----
+ b   | 
+(1 row)
+
+ bool 
+------
+ t
+(1 row)
+
+ ?column? 
+----------
+        2
+(1 row)
+
+ ?column? 
+----------
+ t
+(1 row)
+
+ ?column? 
+----------
+ 
+(1 row)
+
+ ?column? 
+----------
+ f
+(1 row)
+

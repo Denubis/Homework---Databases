@@ -1,0 +1,52 @@
+DROP DATABASE
+CREATE DATABASE
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+ firstname | middleinital | lastname | suffix_description | title_description |           jobtitle            |   department    |        email        |          url           | imaddress |     phone_number     | phonetype_description |  birthday  |                        notes                         |        companyname         |        street1        |         street2         |     city      | state_province | zip_postcode | country_region |  company_url   | company_phone 
+-----------+--------------+----------+--------------------+-------------------+-------------------------------+-----------------+---------------------+------------------------+-----------+----------------------+-----------------------+------------+------------------------------------------------------+----------------------------+-----------------------+-------------------------+---------------+----------------+--------------+----------------+----------------+---------------
+ Jacob     | P            | Jacoby   | Jr.                | Mr.               | Director                      | Finance         | jjacoby@concor.com  | www.concor.com/~jacoby | jpjacoby  | 323-546-3322 ext. 29 | work                  | 1969-07-15 | All meetings must be sheduled through his assistant. | Concor International, Inc. | 143 North Main Street |                         | Beverly Hills | CA             | 90210-3712   | USA            | www.concor.com | 323-546-5000
+ Charlene  |              | Smith    |                    | Ms.               | Assistant to Finance Director | Finance         | csmith@concor.com   |                        | charsmith | 323-546-3322 ext. 30 | work                  | 1972-06-15 | Very helpful.                                        | Concor International, Inc. | 143 Main Street       |                         | Beverly Hills | CA             | 90210-3712   | USA            | www.concor.com | 323-546-5000
+ Carson    | B            | Campbell |                    | Dr.               | Chief Resident                | Geriatrics      | cbc232@mvch.org     |                        |           | 585-544-2121         | Home                  | 1955-01-05 | Wife: Lisa, Kids: Lane, Lucy, Lucinda.               | Mountain View Hospital     |                       |                         |               |                |              |                | www.mvch.org   | 
+ Les       | M            | Nessman  | Ph.D.              | Prof.             | Professor                     | Communications  | lmncom@rit.edu      |                        |           | 585-475-1111         | work                  | 1964-03-23 | Likes when work is handed in on time.                | RIT                        | Bldg. 6               | 106 Lomb Memorial Drive | Rochester     | NY             | 14623        | USA            | www.rit.edu    | 
+ Rachel    |              | Raye     |                    | Miss.             |                               |                 | goof@go.com         |                        | goofy14   | 585-532-4332         | cell                  | 1985-05-06 | Favourite colour is orange.                          |                            |                       |                         |               |                |              |                |                | 
+ Georgia   | G H          | Burnett  |                    | Ms.               | Ph.D. Candidate               | Ancient History | georgia@fedarch.org |                        |           |                      |                       | 1991-10-03 |                                                      | Macquarie University       |                       |                         | Sydney        | NSW            |              | Australia      |                | 
+(6 rows)
+
+ firstname | lastname 
+-----------+----------
+ Charlene  | Smith
+(1 row)
+
+ firstname | lastname |           jobtitle            | department 
+-----------+----------+-------------------------------+------------
+ Jacob     | Jacoby   | Director                      | Finance
+ Charlene  | Smith    | Assistant to Finance Director | Finance
+(2 rows)
+
+ firstname | lastname 
+-----------+----------
+ Jacob     | Jacoby
+ Charlene  | Smith
+(2 rows)
+
+ firstname | lastname |     phone_number     
+-----------+----------+----------------------
+ Jacob     | Jacoby   | 323-546-3322 ext. 29
+ Charlene  | Smith    | 323-546-3322 ext. 30
+ Les       | Nessman  | 585-475-1111
+ Rachel    | Raye     | 585-532-4332
+(4 rows)
+
+ALTER TABLE
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+DELETE 1
+ALTER TABLE
